@@ -1,0 +1,23 @@
+.content {
+    width: 1000px;
+    margin: 10px 0 0 10px;
+    border-radius: 20px;
+}
+.dialogs {
+    display: flex;
+}
+.dialogsItems {
+    padding-left: 50px;
+}
+.dialogsItems .active {
+    color: red;
+}
+.dialog {
+
+}
+.messages {
+    padding-left: 50px;
+}
+.message {
+
+}

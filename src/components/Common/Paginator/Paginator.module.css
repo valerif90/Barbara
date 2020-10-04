@@ -1,0 +1,8 @@
+.selectedPages {
+    color: rgba(205, 24, 34, 0.93);
+    cursor: pointer;
+    font-size: 30px;
+}
+.pages:hover {
+    cursor: pointer;
+}

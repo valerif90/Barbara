@@ -1,0 +1,19 @@
+.header {
+    background: #6ca85f;
+    height: 100px;
+    display: flex;
+}
+.div {
+    font-family: "Fira Code Light";
+    color: darkblue;
+    font-size: 40px;
+    padding-left: 380px;
+    padding-top: 25px;
+    text-transform: uppercase;
+    text-shadow: 1px -3px 2px slategrey;
+}
+.loginBlock {
+    float: right;
+    padding-top: 30px;
+    padding-left: 230px;
+}

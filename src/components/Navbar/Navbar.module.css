@@ -1,0 +1,15 @@
+.nav {
+    width: 200px;
+    margin-left: 0;
+    padding: 20px 0 0 20px;
+    margin-top: 10px;
+    background: pink;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}
+.item a.active {
+    color: darkblue;
+}
