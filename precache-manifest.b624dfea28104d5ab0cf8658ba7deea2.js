@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b370829f2532b3ba102d46d9ab72ec6b",
+    "revision": "578886e1e62fb88798ed9aae37481e53",
     "url": "/Barbara/index.html"
   },
   {
-    "revision": "cbb9a4a4376944c95aa5",
+    "revision": "f4003bd73d73fca5170b",
     "url": "/Barbara/static/css/main.c6cc8249.chunk.css"
   },
   {
-    "revision": "21bb0c355b9ef64de94c",
-    "url": "/Barbara/static/js/2.e5d3da5a.chunk.js"
+    "revision": "7e45af2f3acac108d213",
+    "url": "/Barbara/static/js/2.c17fe9b5.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/Barbara/static/js/2.e5d3da5a.chunk.js.LICENSE.txt"
+    "url": "/Barbara/static/js/2.c17fe9b5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cbb9a4a4376944c95aa5",
-    "url": "/Barbara/static/js/main.651fb0c2.chunk.js"
+    "revision": "f4003bd73d73fca5170b",
+    "url": "/Barbara/static/js/main.88101c22.chunk.js"
   },
   {
     "revision": "6ee875840332558557e4",
