@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import styles from './App.module.css';
 import {Route} from 'react-router-dom';
 import HeaderContainer from './components/Header/HeaderContainer';
 import Navbar from './components/Navbar/Navbar';
@@ -10,6 +10,7 @@ import DialogsContainer from './components/Dialogs/DialogsContainer';
 import UsersContainer from './components/Users/UsersContainer';
 import Login from "./components/Login/Login";
 import {authAPI} from "./api/api";
+import Home from './components/Home/Home';
 
 
 
@@ -31,7 +32,9 @@ class App extends React.Component {
     render() {
 
     return (
-        <div className='container'>
+            <div>
+                <img className={styles.wallpaper} src='https://i.pinimg.com/originals/7b/13/7a/7b137a04428d38f110e32aa2cebd4791.jpg'/>
+                 <div className={styles.container}>
                 <HeaderContainer />
                 <section>
                     <Navbar/>
@@ -42,8 +45,10 @@ class App extends React.Component {
                         <Route path='/friends' component={Friends}/>
                         <Route path='/users' render={ () => <UsersContainer /> }/>
                         <Route path='/login' render={ () => <Login /> }/>
+                        <Route path='/home' render={ () => <Home /> }/>
                     </div>
                 </section>
+                </div>
             </div>
         )
     }

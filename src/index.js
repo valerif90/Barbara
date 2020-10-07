@@ -9,13 +9,14 @@ import {Provider} from "react-redux";
 
 
     ReactDOM.render(
-        <HashRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter>
             <Provider store={store}>
             <App />
             </Provider>
         </HashRouter>,
         document.getElementById('root'));
 
+//   В HashRouter или BrowserRouter вставить       basename={process.env.PUBLIC_URL}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
