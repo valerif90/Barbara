@@ -45,7 +45,7 @@ class App extends React.Component {
                         <Route path='/friends' component={Friends}/>
                         <Route path='/users' render={ () => <UsersContainer /> }/>
                         <Route path='/login' render={ () => <Login /> }/>
-                        <Route path='/home' render={ () => <Home /> }/>
+                        <Route exact path='/' render={ () => <Home /> }/>
                     </div>
                 </section>
                 </div>

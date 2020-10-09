@@ -1,6 +1,9 @@
 .userPhoto {
     height: 150px;
 }
+.container {
+    margin-left: 30px;
+}
 /*.container {*/
 /*    display: flex;*/
 /*}*/

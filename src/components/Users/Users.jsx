@@ -8,7 +8,7 @@ import Paginator from "../Common/Paginator/Paginator";
 let Users = (props) => {
 
     return (
-            <div>
+            <div className={styles.container}>
 
                 <Paginator currentPage={props.currentPage} onPageChanged={props.onPageChanged}
                            totalUsersCount={props.totalUsersCount} pageSize={props.pageSize} />

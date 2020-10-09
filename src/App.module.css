@@ -1,0 +1,31 @@
+.wallpaper {
+    /* background-image: url('./components/Images/barbara-palvin-31-wallpaper.jpg'); */
+    position: absolute;
+    width: max-content;
+    z-index: 1;
+    position: fixed;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+}
+.container {
+    background-color:dodgerblue;;
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+section {
+    display: flex;
+}
+
+div {
+    font-family: "MV Boli";
+}
+
+.container_content {
+  width: 1000px;
+  margin: 10px 0 0 10px;
+  background-color: dodgerblue;
+}
