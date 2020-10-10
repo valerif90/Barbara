@@ -1,5 +1,5 @@
 import React from "react";
-import s from './Dialogs.module.css';
+import styles from './Dialogs.module.css';
 import Message from "./Message/Message";
 import User from "./User/User";
 import {Field, reduxForm} from "redux-form";
@@ -9,7 +9,7 @@ const Dialogs = (props) => {
 
     let state = props.dialogsPage;
 
-    let dialogsElements = state.dialogs.map(d => <User name={d.name} id={d._id} avatar={d.avatar} />);
+    let dialogsElements = state.dialogs.map(d => <User name={d.name} id={d.id} avatar={d.avatar} />);
     let messagesElements = state.messages.map(m => <Message message={m.message} />);
     let newMessageBody = state.newMessageBody;
 
@@ -19,11 +19,11 @@ const Dialogs = (props) => {
 
 
     return (
-        <div className={s.dialogs}>
-            <div className={s.dialogsItems}>
+        <div className={styles.dialogs}>
+            <div className={styles.dialogsItems}>
                 {dialogsElements}
             </div>
-            <div className={s.messages}>
+            <div className={styles.messages}>
                 <div>{messagesElements}</div>
                     <AddMessageFormRedux onSubmit={addNewMessage} />
             </div>

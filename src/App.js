@@ -21,8 +21,8 @@ class App extends React.Component {
         authAPI.me()
             .then(response => {
                 if (response.data.resultCode === 0) {
-                    let {_id, login, email} = response.data.data;
-                    this.props.setAuthUserData(_id, email, login);
+                    let {id, login, email} = response.data.data;
+                    this.props.setAuthUserData(id, email, login);
                 }
             })
         // this.props.getAuthUserData();

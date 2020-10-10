@@ -14,11 +14,11 @@ let Users = (props) => {
                            totalUsersCount={props.totalUsersCount} pageSize={props.pageSize} />
 
                 {
-                    props.users.map(user => <div key={user._id}>
+                    props.users.map(user => <div key={user.id}>
                         <div className={styles.container}>
                     <span>
                         <div>
-                            <NavLink to={'/profile/' + user._id}>
+                            <NavLink to={'/profile/' + user.id}>
                             <img
                                 src={user.photoUrl != " " ? user.photoUrl : "https://i.pinimg.com/originals/76/47/9d/76479dd91dc55c2768ddccfc30a4fbf5.png"}
                                 className={styles.userPhoto} alt=""/>
@@ -27,12 +27,12 @@ let Users = (props) => {
                         <div>
                             {user.followed
                                 ? <button disabled={props.followingInProgress
-                                    .some(_id => _id === user._id)}
-                                     onClick={() => {props.unfollow(user._id) }}>unfollow</button>
+                                    .some(id => id === user.id)}
+                                     onClick={() => {props.unfollow(user.id) }}>unfollow</button>
 
-                                : <button disabled={props.followingInProgress.some(_id => _id === user._id)}
+                                : <button disabled={props.followingInProgress.some(id => id === user.id)}
 
-                                    onClick={() => {props.follow(user._id) }}>follow</button>}
+                                    onClick={() => {props.follow(user.id) }}>follow</button>}
                         </div>
                     </span>
                             <span>
@@ -40,7 +40,7 @@ let Users = (props) => {
                             <div>{user.fullName}</div>
                         </span>
                         <span>
-                            <div>{user._id}</div>
+                            <div>{user.id}</div>
                         </span>
                     </span>
                         </div>
