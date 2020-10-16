@@ -11,6 +11,7 @@ import UsersContainer from './components/Users/UsersContainer';
 import Login from "./components/Login/Login";
 import {authAPI} from "./api/api";
 import Home from './components/Home/Home';
+import Registration from "./components/Registration/Registration";
 
 
 
@@ -45,6 +46,7 @@ class App extends React.Component {
                         <Route path='/friends' component={Friends}/>
                         <Route path='/users' render={ () => <UsersContainer /> }/>
                         <Route path='/login' render={ () => <Login /> }/>
+                        <Route path='/registration' render={ () => <Registration /> }/>
                         <Route exact path='/' render={ () => <Home /> }/>
                     </div>
                 </section>

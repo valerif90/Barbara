@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
+import Registration from "../Registration/Registration";
 
 const Header = (props) => {
     return (
@@ -12,6 +13,7 @@ const Header = (props) => {
                     <div>{props.login} - <button onClick={props.logout}>Logout</button></div>
                 : <NavLink to={'/login'}>LOGIN</NavLink> }
             </div>
+            <NavLink to={'/registration'}>REGISTRATION</NavLink> }
         </header>
     )
 };

@@ -5,6 +5,7 @@ const Home = (props) => {
     return (
         <div>
              <img src="https://i.gifer.com/APw5.gif" width={500}/>
+             <h3>Welcome!</h3>
         </div>
     )
 };

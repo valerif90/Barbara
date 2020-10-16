@@ -3,7 +3,8 @@ import axios from 'axios';
 
 const instance = axios.create({
     //withCredentials: true
-    baseURL: 'http://localhost:4000/'
+    baseURL: 'http://localhost:4000/',
+    responseType: "json"
 });
 
 export const usersAPI = {

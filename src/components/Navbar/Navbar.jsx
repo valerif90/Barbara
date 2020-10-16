@@ -6,11 +6,14 @@ import {NavLink} from "react-router-dom";
 const Navbar = () => {
     return (
         <nav className={styles.nav}>
-              <div className={styles.item}>
-                <NavLink to="/home" activeClassName={styles.active}>Home</NavLink>
+            <div className={styles.item}>
+                <NavLink to="/" activeClassName={styles.active}>Home</NavLink>
             </div>
             <div className={styles.item}>
                 <NavLink to="/profile" activeClassName={styles.active}>Profile</NavLink>
+            </div>
+            <div className={styles.item}>
+                <NavLink to="/user" activeClassName={styles.active}>User</NavLink>
             </div>
             <div className={styles.item}>
                 <NavLink to="/users" activeClassName={styles.active}>Users</NavLink>
